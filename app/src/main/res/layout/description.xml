@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="20dp"
+    android:id="@+id/mainLayout">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/list_selector"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:elevation="0dp">
+
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+
+            />
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/mainLayout"
+android:layout_margin="10dp"
+
+        app:layout_constraintTop_toBottomOf="@id/toolbar_layout"
+        app:layout_constraintEnd_toEndOf="@id/mainLayout">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/imageviewpager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/artisan_img"
+            android:padding="0dp"
+
+         />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/description"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/party_full_name"
+            app:layout_constraintTop_toBottomOf="@id/imageviewpager"
+            app:layout_constraintEnd_toEndOf="@id/imageviewpager"
+            app:layout_constraintStart_toStartOf="@id/imageviewpager"
+
+            />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1050942523648",
+    "firebase_url": "https://pdp-hycode-pdp.firebaseio.com",
+    "project_id": "pdp-hycode-pdp",
+    "storage_bucket": "pdp-hycode-pdp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050942523648:android:7d11a884097e035b",
+        "android_client_info": {
+          "package_name": "pdp.hycode.pdp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1050942523648-h1b4766if1ve62slbjttko8vq4k74dr6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkgOuAhKUE097bbOyrl61DPhHoUNYSkC0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
